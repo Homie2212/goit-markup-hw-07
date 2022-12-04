@@ -43,7 +43,7 @@ a {
     text-decoration: none;
 }
 
-.header-link :hover
+.header-list :hover
 {
     color: coral;
 }
