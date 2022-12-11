@@ -176,8 +176,8 @@ margin: 24px;
 }
 
 .hero {
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: #2E2F42;
     text-align: center;
 }
@@ -212,7 +212,11 @@ margin-right: auto;
     border-radius: 4px;
 }
 
-
+.works{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+}
 .main-title-s-two {
 font-weight: 500;
 font-size: 20px;
@@ -242,8 +246,8 @@ padding-left: 890px;
 }
 .team{
     background-color: #F4F4FD;
-    padding-top: 166px;
-    padding-bottom: 146px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .main-list {
 display: flex;
