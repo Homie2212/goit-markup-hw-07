@@ -9,7 +9,6 @@
   --accent-secondary: #404bbf;
   --social-media-bgc: rgba(255, 255, 255, 0.1);
   --social-media-accent: #31d0aa;
-  --social-button:  #9400d3;
   --gap24: 24px;
   --gap48: 48px;
   --shadow-hero-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -356,7 +355,7 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
 
 .team .list-social-media-link:hover,
 .team .list-social-media-link:focus{
-  background-color: var(--social-button);
+  background-color: var(--accent-secondary);
 }
 
 .team .list-social-media {
@@ -478,7 +477,7 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
 .gallery-list :hover {
   box-shadow: var(--shadow-secondary);
 }
-.link:hover{
+.portfolio .link:hover{
   box-shadow: var(--shadow-secondary);
 }
 
