@@ -9,6 +9,7 @@
   --accent-secondary: #404bbf;
   --social-media-bgc: rgba(255, 255, 255, 0.1);
   --social-media-accent: #31d0aa;
+  --social-button:  #740892;
   --gap24: 24px;
   --gap48: 48px;
   --shadow-hero-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -52,6 +53,7 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
 
 .link {
   text-decoration: none;
+  display: block;
 }
 
 .list {
@@ -126,6 +128,7 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
 .customer-link,
 .footer .container,
 .list-social-media,
+.list-social-media-link,
 .list-social-media-link {
   display: flex;
 }
@@ -134,10 +137,16 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   color: var(--third-color);
   background-color: var(--social-media-bgc);
+}
+
+.link-social-media{
+  width: 40px;
+  height: 40px;
 }
 
 .social-media-icon {
@@ -201,7 +210,7 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
-}
+}1440px
 
 .footer .container {
   align-items: baseline;
@@ -241,12 +250,13 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
   background-color: var(--social-media-accent);
 }
 
+
 /*---------- Index.html ----------*/
 .hero {
   padding-top: 192px;
   padding-bottom: 192px;
   min-height: 600px;
-  max-width: 1600px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 
@@ -378,18 +388,26 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
 .customer-link {
   justify-content: center;
   align-items: center;
-  width: 168px;
-  height: 88px;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--third-text-color);
   border-radius: 4px;
 
   color: var(--third-text-color);
+}
+.customer-icon{
+  width: 168px;
+  height: 88px;
 }
 
 .customer-link:hover,
 .customer-link:focus {
   color: var(--accent);
   border: 1px solid var(--accent);
+}
+.list-social-media-link:hover,
+.list-social-media-link:focus{
+  color: var(--social-button);
 }
 
 .client-icon {
