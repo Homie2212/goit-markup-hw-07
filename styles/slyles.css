@@ -569,8 +569,8 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
 
 .backdrop.is-hidden {
   visibility: hidden;
+  scale: 0.5;
   opacity: 0;
-  scale: 0;
   pointer-events: none;
 }
 
@@ -581,7 +581,7 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
   transform: translate(-50%, -50%);
   width: 408px;
   height: 576px;
-  background-color: var(--modal-window-bgc);
+  background-color: var(--main-color);
   border-radius: 4px;
   box-shadow: var(--shadow-modal-window);
   transition: transform 250ms 250ms, opacity 250ms 250ms;
