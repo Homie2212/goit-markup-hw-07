@@ -269,9 +269,9 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
   padding-bottom: 96px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 565px) {
   .footer {
-    padding-left: 108px;
+  
   }
 }
 
@@ -280,6 +280,7 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -311,9 +312,16 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer .logo-web {
+    margin-left: 120px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-left {
     margin-right: 0px;
+    
   }
 }
 
@@ -329,6 +337,7 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
   .footer-text {
     width: 264px;
     margin-bottom: 0px;
+    margin-left: 120px;
   }
 }
 
@@ -355,7 +364,6 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
 .subscribe-title {
   margin-bottom: 16px;
 
-  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -400,6 +408,7 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
 @media screen and (min-width: 768px) {
   .footer-subscribe {
     align-items: flex-start;
+    margin-left: 120px;
   }
 }
 
@@ -1211,7 +1220,7 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
   top: 0;
   left: 0;
   z-index: 100;
-
+overflow: auto;
   width: 100%;
   height: 100%;
 
@@ -1228,12 +1237,13 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
 }
 
 .modal {
+  width: 408px;
+  overflow-y: scroll;
+  width: calc(100% - 30px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  width: 100%;
   padding-top: 72px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -1242,6 +1252,13 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
   background-color: var(--modal-window-bgc);
   border-radius: 4px;
   box-shadow: var(--shadow-modal-window);
+}
+
+@media screen and (orientation:landscape) {
+  .modal {
+    top: 2%;
+    transform: translateX(-50%);
+  }
 }
 
 @media screen and (min-width: 428px) and (max-width: 767px) {
@@ -1253,6 +1270,7 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
+    
   }
 }
 
